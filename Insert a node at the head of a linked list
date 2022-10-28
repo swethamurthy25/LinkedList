@@ -36,9 +36,9 @@ def print_singly_linked_list(node, sep, fptr):
 #
 #
 def insertNodeAtHead(head, data):
-    newNode = SinglyLinkedListNode(data)
-    newNode.next = head
-    head = newNode    
+    newNode = SinglyLinkedListNode(data) #Initialize a new node with the data/value (example 383)
+    newNode.next = head   #The reference of the newly created node(newNode.next) should point to the current head
+    head = newNode  #Assign the new node as the Head
     return head
 
 if __name__ == '__main__':
