@@ -1,3 +1,28 @@
+class Solution:
+    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        
+        # Use buildin function - TC is O(N) and SC is O(N)
+        list = []
+        currNode = head
+        while currNode != None:
+            list.append(currNode.val)
+            currNode = currNode.next
+            
+        return list[::-1]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Given the head of a singly linked list, return true if it is a palindrome or false otherwise.
 
 Example 1:
@@ -22,16 +47,6 @@ ____________________________________________________________________
 
 # TC is O(n) and SC is O(n)
 
-class Solution:
-    def isPalindrome(self, head: Optional[ListNode]) -> bool:
-        
-        # Use buildin function - TC is O(N) and SC is O(N)
-        list = []
-        currNode = head
-        while currNode != None:
-            list.append(currNode.val)
-            currNode = currNode.next
-            
-        return list[::-1]
+
  
         
