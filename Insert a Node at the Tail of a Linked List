@@ -35,16 +35,16 @@ def print_singly_linked_list(node, sep, fptr):
 #
 #
 def insertNodeAtTail(head, data):
-    newNode = SinglyLinkedListNode(data)
+    newNode = SinglyLinkedListNode(data) #Create a new node that you need to insert
     
-    if head is None:
+    if head is None:     #Check if the linkedlist is empty , if empty the newnode will become the head
         head = newNode
         return head
     
-    currNode = head
+    currNode = head      # If the linked list is not empty , start from head (currNode) and navigate untill tail 
     while currNode.next:
         currNode = currNode.next
-    currNode.next = newNode
+    currNode.next = newNode      #Assign the tail node to the new node and return the head
     return head
 
 if __name__ == '__main__':
