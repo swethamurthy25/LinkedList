@@ -1,11 +1,4 @@
 
-Procedure:
- 	Initialize a new node with the data/value (example 383)
- 	The reference of the newly created node should point to the current head
- 	Assign the new node as the Head
-
-
-**********************************************************************
 
 !/bin/python3
 
